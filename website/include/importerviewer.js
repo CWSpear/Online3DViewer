@@ -54,7 +54,7 @@ ImporterViewer.prototype.ShowAllMeshes = function (inEnvironment) {
     },
     onFinish: function (meshes) {
       myThis.AdjustClippingPlanes(50.0);
-      if (!window.alreadyInitialized) {
+      if (!window.updateInProgres) {
         myThis.FitInWindow();
       }
       myThis.viewer.EnableDraw(true);

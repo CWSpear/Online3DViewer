@@ -141,6 +141,10 @@ ImporterApp.prototype.GetWelcomeText = function () {
 };
 
 ImporterApp.prototype.Resize = function () {
+  if (window.updateInProgres) {
+    return;
+  }
+
   function SetWidth(elem, value) {
     elem.width = value;
     elem.style.width = value + 'px';
