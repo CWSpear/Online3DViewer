@@ -1,45 +1,45 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-	 "http://www.w3.org/TR/html4/strict.dtd">
+        "http://www.w3.org/TR/html4/strict.dtd">
 
 <html>
 
 <head>
 
-	<meta http-equiv="content-type" content="text/html;charset=utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta content="text/html;charset=utf-8" http-equiv="content-type">
+    <meta content="width=device-width, user-scalable=no" name="viewport">
 
-	<script type="text/javascript" src="jquery/jquery-3.4.1.js"></script>
-	<script type="text/javascript" src="socketio/socket.io-2.3.0.js"></script>
+    <script src="jquery/jquery-3.4.1.js" type="text/javascript"></script>
+    <script src="socketio/socket.io-2.3.0.js" type="text/javascript"></script>
 
-	<link rel="stylesheet" type="text/css" href="include/importerapp.css">
-	<link rel="stylesheet" type="text/css" href="include/floatingdialog.css">
+    <link href="include/importerapp.css" rel="stylesheet" type="text/css">
+    <link href="include/floatingdialog.css" rel="stylesheet" type="text/css">
 
-	<script type="text/javascript" src="../jsmodeler/three.min.js"></script>
-	<script type="text/javascript" src="../jsmodeler/jsmodeler.js"></script>
-	<script type="text/javascript" src="../jsmodeler/jsmodeler.ext.three.js"></script>
+    <script src="../jsmodeler/three.min.js" type="text/javascript"></script>
+    <script src="../jsmodeler/jsmodeler.js" type="text/javascript"></script>
+    <script src="../jsmodeler/jsmodeler.ext.three.js" type="text/javascript"></script>
 
-	<script type="text/javascript" src="include/floatingdialog.js"></script>
-	<script type="text/javascript" src="include/importerviewer.js"></script>
-	<script type="text/javascript" src="include/importermenu.js"></script>
-	<script type="text/javascript" src="include/importerapp.js"></script>
-	<script type="text/javascript" src="include/refresh-items.js"></script>
+    <script src="include/floatingdialog.js" type="text/javascript"></script>
+    <script src="include/importerviewer.js" type="text/javascript"></script>
+    <script src="include/importermenu.js" type="text/javascript"></script>
+    <script src="include/importerapp.js" type="text/javascript"></script>
+    <script src="include/refresh-items.js" type="text/javascript"></script>
 
-	<!-- ExtensionIncludes -->
-	<script type="text/javascript" src="extensions/example/example.js"></script>
-	<!-- ExtensionIncludesEnd -->
+    <!-- ExtensionIncludes -->
+    <script src="extensions/example/example.js" type="text/javascript"></script>
+    <!-- ExtensionIncludesEnd -->
 
-	<title>Online 3D Viewer</title>
+    <title>Online 3D Viewer</title>
 
 </head>
 
 <body>
-	<div id="top">
-	</div>
-	<div id="left">
-		<div id="menu"></div>
-	</div>
-	<canvas id="modelcanvas" width="0" height="0"></canvas>
-	<input type="file" id="file" style="display:none" multiple />
+<div id="top">
+</div>
+<div id="left">
+    <div id="menu"></div>
+</div>
+<canvas height="0" id="modelcanvas" width="0"></canvas>
+<input id="file" multiple style="display:none" type="file" />
 </body>
 
 </html>
