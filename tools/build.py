@@ -7,10 +7,10 @@ currentPath = os.path.dirname (os.path.abspath (__file__))
 os.chdir (currentPath)
 
 extensions = [
-	#{
-	#	'name' : 'ExampleExtension',
-	#	'path' : 'extensions/example/example.js'
-	#}
+	{
+		'name' : 'AutoRefreshExtension',
+		'path' : 'extensions/auto-refresh/auto-refresh.js'
+	}
 ]
 
 def PrintInfo (message):
