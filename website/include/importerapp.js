@@ -219,6 +219,7 @@ ImporterApp.prototype.GenerateMenu = function () {
             .appendTo(materialButtons);
           highlightButton.click(function () {
             importerApp.HighlightMeshesByMaterial(materialIndex);
+            // importerApp.ChangeColor(0xff0000);
           });
           var fitInWindowButton = $('<img>')
             .addClass('submenubutton')
@@ -656,6 +657,10 @@ ImporterApp.prototype.HighlightMeshesByMaterial = function (materialIndex) {
   this.meshesGroup.SetOpen(true);
   this.ScrollMeshIntoView(meshIndices[0]);
   this.viewer.Draw();
+};
+
+ImporterApp.prototype.ChangeColor = function (color) {
+  this.viewer.ChangeColor(color);
 };
 
 ImporterApp.prototype.OnCanvasClick = function (x, y) {
